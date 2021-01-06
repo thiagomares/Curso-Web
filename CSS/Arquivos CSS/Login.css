@@ -1,0 +1,81 @@
+* {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    
+}
+
+body {
+    background:black;
+}
+
+#container {
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 120px;
+    border-radius: 10px;
+    /*
+        O Border Radius vai fazer com que 
+        as bordas da caixa fique arredondadas
+        e quanto maior o raio, mais arredondado
+        as bordas ficarão.
+    */
+    background: rgba(255,255,255,0.3);
+    text-align: center;
+}
+
+#container img {
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-bottom: 30px;
+}
+input {
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+#usuario {
+    height: 40px;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    background: black no-repeat;
+    background-position: 10px;
+    color: white;
+    margin: 10px;
+    place-content: 10px;
+}
+
+
+input#senha {
+    height: 40px;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    margin: 10px;
+}
+
+button {
+    height: 40px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    color: black;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#container2 {
+    width: 400px;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    background: black;
+    color: white;
+}

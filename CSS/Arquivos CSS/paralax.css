@@ -1,0 +1,75 @@
+.conteudo {
+    background: #777;
+    color: white;
+    text-align: center justify;
+    padding: 50px 10px;
+}
+
+.conteudo h3 {
+    text-align: center;
+    color: #111111;
+    text-transform: uppercase; 
+}
+
+body, html {
+    margin: 0;
+    font-family: 16px "lato", sans-serif;
+    color: #777;
+    height:100%;
+}
+
+/*
+    Para fazer o efeito paralax, nós utilizamos a técnica de layout
+    liquido, assim, fazendo com que navegação vertical rode de forma mais fluida.
+*/
+
+/* EFEITO PARALAX */
+/*
+    Para criar o Efeito paralax nas imagens, primeiro vamos formatar
+    as imagens de forma genérica e em seguida, de forma objetiva.
+*/
+
+.caixa1, .caixa2, .caixa3, .caixa4 {
+    height: 100%;
+    background-size:cover;
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+/*
+    Para fazer o paralax, basta inserir no codigo um background attachment
+    fixo, que o efeito vai se manter
+*/
+.caixa1 {
+    background-image: url(../Imagens/Paralax/imagem1.jpg);
+}
+
+.caixa2 {
+    background-image: url(../Imagens/Paralax/imagem2.jpg);
+}
+
+.caixa3 {
+    background-image: url(../Imagens/Paralax/imagem3.jpg);
+}
+
+.caixa4 {
+    background-image: url(../Imagens/Paralax/imagem4.jpg);
+}
+
+.conteudotitulo {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+}
+
+.conteudotitulo span.titulo {
+    color: white;
+    background-color: #111;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+}

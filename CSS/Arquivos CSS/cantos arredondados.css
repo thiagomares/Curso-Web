@@ -1,0 +1,60 @@
+body {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#caixa {
+    width: 300px;
+    height: 300px;
+    background: #b9c941;
+    padding: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin: 30px;
+    box-sizing: border-box;
+}
+
+/*
+    É possível arredondar todas as bordas com valores diferentes
+    usando a mesma técnica de imputar valores de ordem horaria,
+    left-top, right-top, right-bottom, left-bottom.
+
+    É possivel também indicar com apenas dois valores as bordas que estáo 
+    de frente para outra, no caso:
+    o primeiro valor será para as bordas left-top e right-bottom, e o segundo 
+    será para os cantos right-top e left-bottom.
+*/
+
+/*
+    Para utilizar border radius em navegadores antigos,
+    como o mozilla ou versoes desatualizadas do chrome ou do
+    edge, é preciso inserir prefixos para que estes comandos funcionem
+    caso contrário, as bordas inseridas neles não funcionarão correntamente
+    ou sequer será exibida.
+
+    Para utilizar as bordas em versões desatualizadas do safari ou chrome::
+    -webkit-(comando que deseja inserir): valor;
+
+    para navegadores livres baseados no codigo do mozilla:
+    -moz-(comando que deseja inserir): valor;
+
+    As caixas na formatação padrão do css, irão sempre somar ao
+    tamanho da caixa (height e width) aos espaçamentos internos
+    (padding) da caixa, ou seja, uma caixa de 100x100, com um padding
+    de 50px, a caixa passará a ter 150x150.
+
+    Com o box-sizing, a caixa terá sua altura e largura fixas, independente
+    do espaçamento interno que a mesma tenha. Por exemplo, se a caixa tiver
+    uma dimensão de 300x300 px, e um espaçamento de 50px, ao invés
+    dele transformar-se em uma caixa de 350x350 px, ele vai manter suas dimensoes
+    padroes, porem, o espaçamento dele irá contar a partir da borda da caixa.
+
+    E por fim, os prefixos de comandos utilizados para arredondamento de bordas utilizados 
+    para que estas bordas funcionem em navegadores mais antigos, também é possível utilizar
+    no box-sizing.
+
+
+    
+*/

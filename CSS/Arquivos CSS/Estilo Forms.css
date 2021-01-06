@@ -1,0 +1,45 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+div {
+    padding: 10px;
+}
+
+fieldset {
+    padding: 1em;
+    border: 1px solid black;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    border: 1px solid red;
+    display: block;
+    cursor: pointer;
+}
+
+input [type="text"] {
+    width: 200px;
+}
+
+/*
+    Quando colocamos um atributo entre colchetes em css
+    o css só irá modificar aquele item que tem aquele atributo
+    declarado, não todos, como é o padrão para modificação.
+    Assim, fazendo uma especifidade maior. Claro que, 
+    caso queira inserir uma especifidade pra cada item no codigo
+    você vai ter que inserir este comando para cada atributo
+    que queira modificar 
+*/
+
+input [type="checkbox"] {
+    width: 10px;
+}
+
+textarea {
+    width: 20em;
+    height: 10em;
+    border: 1px solid rgb(184, 183, 183);
+}

@@ -1,0 +1,72 @@
+#caixa {
+    width: 300px;
+    height: 300px;
+    margin: auto auto;
+    background: green;
+    animation-name: animação-caixa;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+/*
+    O comando @keyframes fará com que possamos fazer
+    animações com um ponto inicial e um ponto final, e assim que 
+    esta animação for feita, para rodar esta animação na caixa que 
+    nos utilizamos o comando animation name;
+
+    Para determinarmos o tempo desta animação, utilizamos o comando 
+    animation-duration, e damos um valor para ele;
+
+    Para definirmos uma quantidade de vezes que esta animação irá funcionar
+    utilizaremo so comando animation-interation-count;
+
+    Para inverter a ordem da animação, basta inserir o comando animation-direction.
+    Assim, é possível inserir a direção, se queremos forward, reverse ou alternado.
+
+    E por fim, podemos aninhar todos os comandos com o comando animate
+    assim como fazemos com o comando background ou font, por exemplo.
+*/
+
+@keyframes animação-caixa {
+    from {
+        background: green;
+        border-radius: 0px
+    }
+
+    to {
+        background: purple;
+        border-radius: 300px;
+    }
+}
+
+/*
+    Tal como fizemos com versões desatualizadas de mozilla, chrome
+    safari e opera, para o keyframes funcionar nestes navegadores desatualizados
+    devemos inserir estes prefixo tanto no keyframes tanto no animation.
+
+    para chrome e safari:
+    @-webkit-keyframes (nome da animação)
+
+    para Mozilla:
+    @-moz-keyframes (nome da animação)
+
+    para o opera:
+    @-o-keyframes (nome da animação)
+
+    O Mesmo vale para comando animation.
+
+    No chrome e safari:
+    -webkit-animation
+
+    no mozilla:
+    -moz-animation
+
+    no opera:
+    -o-animation
+
+    e por fim, para adicionarmos um delay, basta adicionar o comando
+    animation-delay e em seguida adicionar um tempo de delay.
+*/

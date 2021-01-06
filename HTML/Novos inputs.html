@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Novas tags de Input HTML 5</title>
+    </head>
+    <body>
+        <form>
+            <!--Nome-->
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" >
+            <br><br>
+            <!--Email-->
+            <label for="email">E-Mail</label>
+            <input type="email" name="email" id="email" autofocus>
+            <!--
+                Uma das novas tags é a tag e-mail, que fará com que a caixa de texto
+                requira um email válido, com uma mensagem que aparece logo abaixo da caixa de texto
+
+                A Subtag required não enviará nada se a caixa de texto estiver vazia.
+
+                O autofocus fará com que a caixa que você inseriu o comando já abra nela selecionada.
+            -->
+            <br><br>
+            <!--Número-->
+            <label for="numero">Número</label>
+            <input name="numero" type="number" id="numero" placeholder="Digite seu número de celular">
+            <!--
+                O type número é uma tag que só aceita valores numéricos, caso tente inserir valores
+                do tipo string, ele não irá aceitar
+
+                A tag minimo e máximo fará com que os inputs tenham um valor máximo na seta.
+
+                o comando step fará com que os numeros saltarem em um passo determinado, como em 5 em 
+                5, 10 em 10 e por aí vai.
+            -->
+            <br><br>
+            <!--Senha-->
+            <label for="senha">Senha</label>
+            <input name="senha" type="password" id="senha" placeholder="Digite sua Senha" minlength="8" maxlength="16" required>
+            <!--
+                As tags min e max lenght servem para definirmos um tamanho máximo de que a caixa de texto suportará
+            -->
+            <br><br>
+            <!--Links-->
+            <label for="links">Links</label>
+            <input name="links" type="url" id="links" placeholder="Linkão da massa">
+            <br><br>
+            <!--Busca-->
+            <label for="pesquisa">Pesquisa</label>
+            <input name="pesquisa" type="search" id="pesquisa" placeholder="Buscar" required>
+            <!--Range-->
+            <label for="range">Alcance</label>
+            <input name="range" type="range" min="1" max="100">
+            <br><br>
+            <input type="submit" name="" value="Enviar"> 
+        </form>
+    </body>
+</html>

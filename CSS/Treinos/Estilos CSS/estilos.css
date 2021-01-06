@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
+}
+ul {
+    list-style: none;
+}
+
+/*
+    Para fazermos um menu em na horizontal, 
+    devemos colocar tanto a lista e cada item da lista mostrando 
+    um inline necessariamente
+*/
+
+ul li {
+    text-align: center;
+    display: inline;
+    line-height: 20px;
+    float: left;
+    margin-right: 40px;
+}
+
+ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    line-height: 20px;
+    display: block;
+    float: left;
+
+}
+
+ul li a:hover{
+    background: #333;
+    color: white;
+    line-height: 20px;
+}
+
+span {
+     color: gray;
+}
+
+h4 {
+    color: white;
+    text-align: left;
+    padding: 10px;
+    display: block;
+    float: right;
+    margin-left: 30px;
+}
+.menu {
+    float: left;
+}
+.fundo {
+    background: orange;
+    height: fit-content;
+}
+.textos {
+    display: inline-block;
+}

@@ -1,0 +1,35 @@
+#caixa {
+    width: 300px;
+    height: 300px;
+    background: lightgreen;
+    margin: 0 auto;
+    border: 1px solid red;
+    border-radius:10px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 10px black;
+    /*background: url(../Imagens/camera.png);*/
+   /* background: linear-gradient( 95deg, rgb(95, 0, 0), rgb(255, 255, 255)); */
+}
+
+#caixa #titulo {
+    color: white;
+    text-shadow: 10px 10px 10px black;
+}
+
+/*
+    O comando text-shadow fará com que o texto projete uma
+    sombra a partir de um dado ponto xy, contados a partir
+    do texto original, fazendo uma especie de "copia" do texto original
+    é possível ainda, acrescentar um desfoque neste texto em copia, para
+    gerar um efeito mais estético. Este efeito de desfoque (ou blur) é 
+    feito simplesmente colocando um valor de desfoque logo após os valores
+    de deslocamento do texto copiado.
+
+    Para fazer o mesmo efeito em uma caixa, ao invés de utilizarmos
+    o comando text-shadow, utilizaremos o comando box-shadow, e a ideia
+    é exatamente a mesma;
+
+    Ainda sobre o box shadow, ainda podemos adicionar um quarto valor, o spread
+    o spread fara com que a caixa sombra aumente de tamanho.
+*/

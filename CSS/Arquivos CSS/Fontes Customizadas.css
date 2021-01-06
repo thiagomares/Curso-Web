@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "Broston";
+    src: url(../Fontes/FormerBroston.woff);
+}
+
+/*
+    Para adicionar uma nova fonte
+    devemos utilizar o comando @font-face
+    que assim, você pode 
+*/
+*{
+    margin:0;
+    padding:0;
+    background: black;
+}
+
+body {
+    min-height: 1440px;
+    min-width: 720px;
+    text-align:center;
+}
+.login {
+    text-align: center
+}
+h3 {
+    font-family: "Broston";
+    font-weight: 30;
+    font-size: 100px;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+}
+
+input {
+    border: none;
+    padding: 20px;
+    border-bottom: 1px solid white;
+    margin-top: 30px;
+    width: 300px;
+    color:white;
+}
+
+input:hover, input:checked {
+    border-bottom: 1px solid rgb(8, 8, 94);
+}
+
+button {
+    background: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 50px;
+    width: 200px;
+    cursor: pointer;
+}
+
+button:hover {
+    background:white;
+    color: black;
+    cursor: pointer;
+}
+
+.cadastro{
+    margin: 50px;
+}
+
+.cadastro a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

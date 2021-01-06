@@ -1,0 +1,113 @@
+.conteudo {
+    background: #dcdcdc;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.item {
+    background: white;
+    border: none;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    -webkit-transition:background 1s;
+    -moz-transition: background 1s;
+    -o-transition: background 1s;
+    transition: background 1s; 
+
+}
+
+
+.item:hover {
+    background: orange;
+    -webkit-transition:background 1s;
+    -moz-transition: background 1s;
+    -o-transition: background 1s;
+    transition: background 1s; 
+}
+
+/*
+    Quando nos temos itens dentro de um container (uma div
+    por exemplo), os itens filhos deste container, em um flexbox
+    se tornam flexitens.
+
+
+    Comandos de flex directon:
+
+        - Row
+        - Row-reverse
+        - column
+        - column-reverse
+
+        O irá alinhar os itens de forma vertical, da esquerda
+        para direita.
+
+        O Row reverse irá fazer justamente o contrário, alinhar
+        os itens da direita para a esquerda.
+
+        O column irá alinhar todos os itens na horizontal, alinhando
+        de cima para baixo.
+
+        E por fim, o column reverse fará com que os itens se alinhem
+        de forma inversa do column, e de baixo para cima.
+
+    Subcomandos de flexbox:
+
+        Dentre os diversos subitens dentro da formatação flexbox
+        temos o comando flex-wrap, que fará a quebra dentro do container
+        que está inserido.
+
+        Os comandos internos do flex-wrap são:
+
+            - nowrap
+            - wrap
+            - wrap-reverse
+
+        O nowrap não fará a quebra de linha dos itens, ou seja,
+        os itens vão se adaptar ao tamanho da caixa que estão inseridos
+
+        o Wrap fará a quebra dos itens dentro do container que eles estão
+        inseridos.
+
+        Por fim, o comando wrap reverse é o misto do wrap com o os comandos 
+        reverse do subtópico anterior, invertendo a ordem de exibição dos itens
+        que estão no bloco e fazendo a quebra de linha ao mesmo tempo.
+
+        O Comando justify-content fará o alinhamento dos itens de acordo
+        com o posicionamento interno da caixa. E os alinhamentos para se inserir
+        dentro da caixa são:
+
+            - flex-start
+            - flex-end
+            - center
+            - space-between
+            - space-around
+        
+        O Flex-start é o alinhamento padrão e se dá o alinhamento pelo início da caixa.
+
+        Por sua vez, o flex-end se alinhará ao final da caixa, porém, diferentemente
+        do comando reverse, ele se alinhará da mesma forma que se alinharia se iniciasse
+        dentro da caixa.
+
+        Por sua vez, o comando center centralizará todos os itens dentro da caixa, sem 
+        excessoes.
+
+        O Comando space-between fará com que os itens dentro do container
+        se espacem entre si.
+
+        Já o comando space around fara um espaçamento entre todos os componentes
+        seja borda, outros itens, etc.
+
+        Por fim e não menos importante o comando align-items fará com que os itens se alinhem
+        a sua forma. E os comandos aceitos pelo align-items são:
+
+        - Stretch
+        - Center
+        - flex-start
+        -flex-end
+        - baseline
+
+*/
