@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Museu Nacional</title>
+
+        <!-- Normalize CSS -->
+        <link rel="stylesheet" href="CSS\normalize.css">
+        <!-- HTML 5 Shiv -->
+        <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+        <![endif]-->
+        <!-- Estilos -->
+        <link rel="stylesheet" href="D:\Curso\Web\CSS\Museu Nacional\CSS\estilos.css">
+
+    </head>
+    <body>
+        <div id="container"> <!-- Inicio Container -->
+            <header> <!-- Inicio Cabeçalho -->
+                <div id="logo" href="#"> <!-- Inicio logo -->
+                    <a href="#"> Museu<span> Nacional</span></a>
+                </div> <!-- Fim Logo -->
+                <nav id="Links"> <!-- Inicio Menu -->
+                    <ul>
+                        <li><a class="transicao" href="#">Home</a></li>
+                        <li><a class="transicao" href="#">O Museu</a></li>
+                        <li><a class="transicao" href="#">Biblioteca</a></li>
+                        <li><a class="transicao" href="#">Agendamentos</a></li>
+                        <li><a class="transicao" href="#">Contato</a></li>
+                        <li><a class="transicao" href="#">Fotos</a></li>
+                        <li><a class="transicao" href="#">Vídeos</a></li>
+                    </ul>
+                </nav> <!-- Fim Menu -->
+            </header> <!-- Fim Cabeçalho -->  
+            <div id="principal"> <!--Inicio principal -->
+                <div id="contents">
+                    <section id="cover">
+                        <img src="D:\Curso\Web\CSS\Museu Nacional\Imagens\museu.png">
+                    </section>
+                    <section>
+                        <div id="noticias">
+                            <iframe width="355" height="320" src="https://www.youtube.com/embed/8AYy-BcjRXg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div id="localização">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.133982196433!2d-44.00727918563406!3d-19.918758043102503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6968dfab8f11f%3A0xb37b1d13a775e472!2sR.%20Mario%20Soares%2C%20444%20-%20Dom%20Bosco%2C%20Belo%20Horizonte%20-%20MG%2C%2030850-650!5e0!3m2!1spt-BR!2sbr!4v1611168547446!5m2!1spt-BR!2sbr" width="320" height="320" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </section>
+                    <section> <!-- Inicio Segunda Linha-->
+                        <div id="exposicoes">
+                            <h6>Exposições</h6>
+                            <ul>
+                                <li><a href="#">Formula 1</a></li>
+                                <li><a href="#">Formula 2</a></li>
+                                <li><a href="#">Formula 3</a></li>
+                                <li><a href="#">MLB</a></li>
+                                <li><a href="#">World Series</a></li>
+                                <li><a href="#">World Baseball Classic</a></li>
+
+                            </ul>
+                        </div>
+                        <div id="sobre">
+                            <h5>Sobre</h5>
+                            <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis alias et tenetur quas, 
+                            animi eveniet perferendis rem dicta harum inventore possimus blanditiis cumque distinctio nulla neque, maiores quod quia error.
+                            </p>
+                        </div>
+                    </section> <!-- Fim Segunda linha -->
+                </div> <!-- Fim Principal-->
+                <aside> <!-- Inicio Barra Lateral-->
+                    <section>
+                        <img src="Imagens\depoimento.png">
+                    </section>
+                    <section id="agendamento"> <!-- Inicio Agendamento-->
+                        <h4>Faça-nos uma visita</h4>
+                        <form>
+                            <fieldset>
+                                <label for="data">Escolha uma data</label>
+                                <input type="date" name="data"><br><br>
+                                <label for="pessoas"> Quantas pessoas?</label>
+                                <input type="number" id="pessoas"> <br><br>
+                                <input type="submit" name="Enviar" placeholder="Enviar"> 
+                            </fieldset>
+                        </form>
+                    </section> <!-- Fim Agendamento-->
+                    <section id="galeria"> <!-- Inicio Galeria -->
+                            <h4>Galeria de Fotos</h4>
+                            <a href="#">
+                                <img src="Imagens\imagem1.jpg" height="93" width="">
+                            </a>
+                            <a href="#">
+                                <img src="Imagens\imagem2.jpg" height="93" width="">
+                            </a>
+                            <a href="#">
+                                <img src="Imagens\imagem3.jpg" height="93" width="">
+                            </a>
+                            <a href="#">
+                                <img src="Imagens\imagem4.jpg" height="93" width="">
+                            </a>   
+                        </section><!-- Fim Galeria -->
+                </aside> <!-- Fim Barrra Lateral -->
+            </div> <!-- Fim Principal -->
+            <footer> <!-- Inicio Rodapé -->
+                <div id="rodape">
+                <h4>Todos Direitos Reservados</h4>
+                </div>
+            </footer><!-- Fim Rodape -->
+        </div> <!-- Fim container -->
+    </body>
+</html>

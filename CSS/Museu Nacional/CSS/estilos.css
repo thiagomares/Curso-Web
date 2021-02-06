@@ -1,0 +1,167 @@
+/* Formatações preliminares */
+
+body {
+    background: #f2f4ec url(../Imagens/fundo.png) repeat-x;
+    font: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+
+/* Formatação logo */
+
+
+#logo a{
+    background: url(../Imagens/logo.png) no-repeat;
+    text-decoration: none;
+    color: rgba(240, 248, 255, 0);
+    width: 248px;
+    height: 21px;
+    text-indent: 9999;
+    display: block;
+    float: left;
+}
+/* Formatação menu*/
+header {
+    padding: 15px 0;
+    height: 55px;
+}
+#Links ul {
+    list-style: none;
+    display: inline;
+    float: right;
+}
+
+#Links ul li {
+    float: left;
+}
+
+#Links ul li a {
+    text-decoration: none;
+    color: orange;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
+    display: inline;
+
+}
+
+#Links ul li a:hover {
+    color: rgb(55, 6, 6);
+    background: white;
+    transition-duration: 1s;
+}
+
+#Links ul li a:link {
+    display: block;
+    margin-right: 15px;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+}
+
+/* Configurando os conteúdos */
+
+/* Conteudo principal */
+
+#contents {
+    width: 710px;
+    float: left;
+    background: white;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/* Formatando conteudos*/
+#noticias {
+    float: left;
+    width: 50%;
+    background: purple;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#localização {
+    float: right;
+    width: 45%;
+    margin: 10px;
+}
+
+#exposicoes{
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#sobre {
+    float: right;
+    width: 40%;
+    margin: 10px;
+}
+
+/* Barra lateral */
+
+aside {
+    width: 350px;
+    float: right;
+    background:  bisque;
+    margin-bottom: 40px;
+}
+
+/* Formatando formulário */
+
+#agendamento {
+    background: gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#agendamento h4 {
+    text-align: center;
+    padding: 10px;
+}
+fieldset {
+    border: none;
+}
+
+#pessoas{
+    width: 30px;
+}
+
+/* Galeria de fotos */
+#galeria {
+    padding: 0 27px;
+    background:  bisque;
+}
+
+#galeria h4 {
+    text-align: center;
+    font-weight: 300;
+}
+#galeria a {
+    background: url(../Imagens/fundo-foto.png) no-repeat;
+    display: block;
+    float: left;
+    padding: 15px 15px 18px 17px;
+    margin: 10px 0 0 20px;
+}
+
+#galeria img {
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+/* Configurando footer */
+
+#rodape {
+    padding: 20px 0 30px 0;
+    margin-top: 20px;
+    background: url(../Imagens/fundo-rodape.png) no-repeat;
+    background-position: center top;
+    text-align: center;
+    color: rgb(104, 64, 5);
+    clear:both;
+}

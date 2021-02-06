@@ -2,24 +2,60 @@
     background: #dcdcdc;
     height: 400px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+   /* flex-direction: row;
+    flex-wrap: center;
+    align-items: baseline;
     justify-content: space-evenly;
+    border: 1px solid black;
+    */
 }
 
 .item {
     background: white;
-    border: none;
+    border: 1px solid black;
     margin: 10px;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 100px; 
+    flex-grow: 0;
+    flex-shrink: 1;
     -webkit-transition:background 1s;
     -moz-transition: background 1s;
     -o-transition: background 1s;
     transition: background 1s; 
-
+    flex-basis: 200px;
 }
 
+.item1 {
+  /* flex-grow: 0;*/
+}  
+
+.ordem1 {
+    order: 1;
+}
+
+.ordem2 {
+    order: 2;
+}
+
+.ordem3 {
+    order: 3;
+}
+
+.ordem4 {
+    order: 4;
+}
+
+.item2 {
+   /* flex-shrink: 2; */
+}
+
+.item:active {
+    background: purple;
+    -webkit-transition:background 1s;
+    -moz-transition: background 1s;
+    -o-transition: background 1s;
+    transition: background 1s; 
+}
 
 .item:hover {
     background: orange;
@@ -110,4 +146,26 @@
         -flex-end
         - baseline
 
+        Comando Order
+
+            O Comando order tem a propriedade de mudar a ordem de exibição dos conteudos
+            independente de como eles aparecem no arquivo html.
+
+            Com este comando, o numero de menor valor irá assumir a posição mais a frente
+            possível.
+
+        Comando flex-grow
+
+            Com o comando flex grow, o bloco que contem este tipo de comando atrelado a ele
+            fará com que ele cresça em relação aos demais, fazendo que assim o bloco cresça até
+            um ponto que utilize todo o espaço do container.
+
+            Porém, quando existe mais blocos com o comando flex grow, estes blocos terão tamanho
+            proporcioal ao valor empregado em cada bloco.
+
+        Comando flex-shrink
+
+            O comando flex shrink fará o exato oposto que o comando flex grow faz:
+            ele fara com que os itens a ele atrelados encolham, e tal como o flex grow, 
+            dependendo do valor.
 */
