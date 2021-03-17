@@ -1,8 +1,43 @@
 body {
     background-color: green;
 }
-.Paragrafo{
-    color: blue;
+
+.Paragrafo {
+    color: white;
     font-size: 60px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*Small devices (landscape phones)*/
+
+@media (min-width: 576px) {
+    body {
+        background-color: orange;
+    }
+}
+
+/*Medium devices (tablets, 768px e superior)*/
+
+@media (min-width: 768px) {
+    body {
+        background-color: purple;
+    }
+}
+
+/*Large devices (desktops, 992px e superior)*/
+
+@media (min-width: 992px) {
+    body {
+        background-color: yellow;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px e superior)*/
+
+@media (min-width: 1200px) {
+    body {
+        background-color: silver;
+    }
 }
