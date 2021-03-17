@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <title>Tamanhos e Bordas</title>
+    </head>
+    <body style="margin: 0 auto;">
+        <!-- Tamanhos -->
+        <!--
+            Para definirmos um tamanho de largura utilizando bootstrap, devemos utilizar o comando w e em seguida, o tamanho em relação ao tamanho da tela. Por exemplo, caso queiramos que aquele bloco ocupe 50% do total da tela, basta inserir o comando w-50.
+
+        -->
+
+        <!-- Classes de Largura -->
+        <div class="bg-primary w-25">Width 25%</div>
+        <div class="bg-primary w-50">Width 50%</div>
+        <div class="bg-primary w-75">Width 75%</div>
+        <div class="bg-primary w-100 ">Width 100%</div>
+        <div class="bg-primary w-auto">Width Auto</div>
+
+        <!--  O mesmo podemos fazer para altura, apenas utilizando h, representando altura, ao inves de w, que representa largura. -->
+
+        <!-- Classes de Altura -->
+        <div style="height: 300px; border: 1px solid gray;">
+            <div class="bg-warning d-inline-block h-25">Height 25%</div>
+            <div class="bg-warning d-inline-block h-50">Height 50%</div>
+            <div class="bg-warning d-inline-block h-75">Height 75%</div>
+            <div class="bg-warning d-inline-block h-100">Height 100%</div>
+            <div class="bg-warning d-inline-block h-auto">Height Auto</div>
+        </div>
+
+        <!-- Bordas -->
+        <!-- 
+            Nos podemos configurar as bordas da mesma forma que configuramos margin e padding, inserindo border, quando queremos selecionar todas as bordas, e em seguida, para selecionarmos uma borda em especifico ou um conjunto de bordas, basta inserir qual a borda que queremos selecionar, que são: Top, Bottom, left, right.
+        -->
+        <div class="border border-white">Width 25%</div>
+        <div class="border border-primary">Width 50%</div>
+        <div class="border border-danger">Width 75%</div>
+        <div class="border border-dark ">Width 100%</div>
+        <div class="border border-success">Width Auto</div>
+
+        <!-- Border Radius -->
+        <!--
+            Border radius define que os cantos das bordas ao inves de terem formas retangulares, tem um formato arredondado. Tal como as bordas que é possível definir em qual borda queremos aplicar a formatação, podemos apenas aplicar em todos os cantos, nos cantos superiores, da direita, da esquerda, inferior e os cantos deixar em formato arrendondado. Ainda é possivel inserir gradações de arredondamento, indo de 0, sendo a menor e 3, o maior.
+        -->
+        <div style="height: 300px; width: 300px; border: 1px solid gray; margin: 0 auto;">
+            <div class="border border-white rounded">Width 25%</div>
+            <div class="border border-primary rounded-top-3">Width 50%</div>
+            <div class="border border-danger rounded-bottom-2">Width 75%</div>
+            <div class="border border-dark rounded-circle">Width 100%</div>
+            <div class="border border-success">Width Auto</div>
+        </div>
+    </body>
+</html>
