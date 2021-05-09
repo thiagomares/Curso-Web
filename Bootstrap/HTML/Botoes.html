@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Botões</title>
+    <link rel="stylesheet" type="text/css" href="/Estilos/EstiloBotao.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body style="margin: 0 auto">
+    <!-- 
+            Botões
+            
+            formatação padrão de botões: btn
+
+            formatação específica: 
+            btn-primary, btn-secondary, btn-success, btn-info,
+            btn-warning, btn-danger, btn-light, btn-dark, btn-link
+        -->
+    <p>Botão com formatação padrão</p>
+    <button class="btn" type="button">Botão1</button>
+    <p>Botões com formatações especificas</p>
+    <!-- Estes botões abaixo tem um pequeno efeito hover quando passam por cima -->
+    <button class="btn btn-primary">Botao2</button>
+    <button class="btn btn-info">Botao info</button>
+    <button class="btn btn-outline-dark">Botão escuro</button>
+
+    <!-- Botoes com contorno -->
+    <a class="btn btn-outline-success" href="#">Botão com contorno</a>
+
+    <!-- 
+            Tamanho dos botoes
+
+            opções disponiveis: lg, sm, block
+
+         -->
+    <p>Tamanho dos Botões</p>
+    <button class="btn btn-primary btn-lg">Botao2</button>
+    <button class="btn btn-info btn-sm">Botao info</button>
+    <button class="btn btn-outline-dark btn-block">Botão escuro</button>
+
+    <!-- 
+            Estado dos botões
+            
+            Esta configuração permite que façamos uma configuração padrão para cada botão que o deixa em estado normal, ativo ou desativado/inativo
+            
+
+            opções: active, disabled 
+        -->
+
+    <h3>Estado Dos Botões</h3>
+
+    <button class="btn btn-primary">Botao2</button>
+    <button class="btn btn-info active">Botao info</button>
+    <button class="btn btn-outline-dark inactive">Botão escuro</button>
+    <br />
+    <!-- ainda há botoes que nos permite trocar o estado dele de normal para ativo por exemplo com o método do próprio html chamado data-toggle -->
+
+    <button class="btn btn-primary" data-toggle="button">Alternador</button>
+
+    <!-- 
+        Grupos de Botoes - Horizontais
+    
+        Temos capacidade ainda de editar botoes, sejam na vertical ou na horizontal
+
+        opções
+    -->
+    <h4>Grupos de botões horizontais</h4>
+    <div class="btn-group">
+      <button class="btn btn-primary">Botao2</button>
+      <button class="btn btn-info">Botao info</button>
+      <button class="btn btn-outline-dark">Botão escuro</button>
+    </div>
+    <!-- Grupos de botoes verticais -->
+
+    <h4>Grupos de botões vertical</h4>
+
+    <div class="btn-group-vertical">
+      <button class="btn btn-primary">Botao2</button>
+      <button class="btn btn-info">Botao info</button>
+      <button class="btn btn-outline-dark">Botão escuro</button>
+    </div>
+    <!-- 
+         Botões Dropdown
+        
+        Botões dropdown são aqueles botoes que se abrem quando precisamos de alguma função interna que está configurada junto a aquela pagina que queremos visualisar
+
+
+    -->
+    <h4>Botões dropdown</h4>
+    <div class="dropdown">
+      <button
+        class="btn btn-success dropdown-toggle"
+        data-toggle="dropdown"
+        type="button"
+      >
+        Clique
+      </button>
+      <div class="dropdown-menu">
+        <a href="#" class="dropdown-item">Item1</a>
+        <a href="#" class="dropdown-item">Item2</a>
+        <a href="#" class="dropdown-item">item3</a>
+      </div>
+    </div>
+
+    <!-- 
+         Toolbar de botoes
+
+         Uma toolbar de botoes é uma especie de barra de tarefas que engloba dois ou mais grupos de botoes
+
+      -->
+    <h4>Toolbar de botoes</h4>
+    <div class="btn-toolbar">
+      <div class="btn-group">
+        <button class="btn btn-primary">Botao2</button>
+        <button class="btn btn-info">Botao info</button>
+        <button class="btn btn-outline-dark">Botão escuro</button>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-outline-dark">Botão escuro</button>
+        <button class="btn btn-outline-dark">Botão escuro</button>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    >
+  </body>
+</html>
